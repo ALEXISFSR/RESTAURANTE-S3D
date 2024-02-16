@@ -33,7 +33,7 @@ public class submenu {
                     System.out.println("Cuantas sopas de pasta desea \n");
                     int op2=lectura.nextInt();
                     System.out.println("Escojiste " + op2 + " DE SOPA DE PASTA");
-ca                  submenuSopas();
+                  submenuSopas();
                     break;
                 case 3:
                     System.out.println("Cuantas changuas desea \n");
@@ -44,7 +44,7 @@ ca                  submenuSopas();
             }
         }while (opcion!=4);
         if (opcion==4){
-            System.out.println("el total fue "+ cantidads +""+
+            System.out.println("el total fue "+ cantidads +""+cantidadc+" "+cantidadp+" ");
             volverMenu();
         }
 
