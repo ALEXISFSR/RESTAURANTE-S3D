@@ -1,14 +1,16 @@
 package RESTAURANTE;
 import java.util.Scanner;
 public class menu {
+    Scanner lectura=new Scanner(System.in);
+
+
     public void menuprincipal() {
 
-        Scanner lectura=new Scanner(System.in);
+        //System.out.println("DIGITE NOMBRE PORFAVOR \n");
+        //String nombre =lectura.nextLine();
 
-        System.out.println("DIGITE NOMBRE PORFAVOR \n");
-        String nombre =lectura.nextLine();
         //BIENVENIDA AL RETSAURANTE
-        System.out.println("BIENVENIDO AL RESTAURANTE "+ nombre.toUpperCase()+ "\n");
+        System.out.println("BIENVENIDO AL RESTAURANTE "+ /*nombre.toUpperCase()+*/ "\n");
 
 
         System.out.println("🥗🍚🥙🥘🍲🍱🦐🍡🍪🍥🍤🍩🍧🍟🍔🍕🍗 \n");
@@ -28,13 +30,16 @@ public class menu {
                 sopas.submenuSopas();
                 break;
             case 2:
-                System.out.println("OPCION 2");
+                submenu Fuerte=new submenu();
+                Fuerte.submenuFuerte();
                 break;
             case 3:
-                System.out.println("OPCION 3");
+                submenu Jugos=new submenu();
+                Jugos.submenuJugos();
                 break;
             case 4:
-                System.out.println("OPCION 4");
+                submenu Postres=new submenu();
+                Postres.submenuPostres();
             case 5:
                 System.out.println("OPCION 5");
 
