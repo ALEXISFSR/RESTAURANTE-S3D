@@ -24,7 +24,8 @@ public class menu {
 
         switch (opcion) {
             case 1:
-                System.out.println("HOLA");
+                submenu sopas=new submenu();
+                sopas.submenuSopas();
                 break;
             case 2:
                 System.out.println("OPCION 2");
